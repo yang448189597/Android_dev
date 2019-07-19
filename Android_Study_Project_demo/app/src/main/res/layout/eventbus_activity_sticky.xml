@@ -4,18 +4,22 @@
     android:gravity="center"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/message_view"
-        android:gravity="center"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sssdasdasdasda"
-        />
+        android:text="Post"/>
 
     <Button
-        android:id="@+id/next"
-        android:text="下一页"
-        android:layout_width="200dp"
-        android:layout_height="45dp" />
+        android:id="@+id/regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regist"/>
+
+    <Button
+        android:id="@+id/unregist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UnRegist"/>
 
 </LinearLayout>
