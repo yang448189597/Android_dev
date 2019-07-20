@@ -48,6 +48,7 @@ public class StickyModeActivity extends AppCompatActivity {
         });
     }
 
+    // posting
     @Subscribe(threadMode = ThreadMode.POSTING, sticky = true)
     public void onMessageEventPostThread(MessageEvent messageEvent) {
         Log.e("PostThread", messageEvent.getMessage());
