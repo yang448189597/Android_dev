@@ -1,8 +1,11 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+
+import com.example.myapplication.EventBus.MessageEvent;
+import com.example.myapplication.R;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

@@ -1,9 +1,12 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+
+import com.example.myapplication.EventBus.MessageEvent;
+import com.example.myapplication.R;
 
 import org.greenrobot.eventbus.EventBus;
 
