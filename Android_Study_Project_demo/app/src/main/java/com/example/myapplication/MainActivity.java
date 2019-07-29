@@ -7,7 +7,6 @@ import com.example.myapplication.fragment.HomeFragment;
 import com.example.myapplication.fragment.SettingFragment;
 import com.example.myapplication.view.TabEntity;
 import com.flyco.tablayout.CommonTabLayout;
-import com.flyco.tablayout.SegmentTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
 import com.flyco.tablayout.listener.OnTabSelectListener;
 
@@ -50,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < mTitles_2.length; i++) {
             mTabEntities.add(new TabEntity(mTitles_2[i], mIconSelectIds[i], mIconUnselectIds[i]));
         }
-
 
 
         mFragments = new ArrayList<>();

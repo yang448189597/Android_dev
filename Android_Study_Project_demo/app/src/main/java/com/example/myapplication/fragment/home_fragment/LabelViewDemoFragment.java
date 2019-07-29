@@ -1,4 +1,4 @@
-package com.example.myapplication.fragment;
+package com.example.myapplication.fragment.home_fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,11 +24,11 @@ import butterknife.OnClick;
 
 /*
  * @Author: Luke
- * @Date: 2019-07-29 15:47
+ * @Date: 2019-07-29 20:58
  * @Sign: Cherish life and keep away from bugs!
  * @Project: Android_Study_Project_demo
  */
-public class HomeFragment extends Fragment {
+public class LabelViewDemoFragment extends Fragment {
 
 
     @BindView(R.id.btn_none)
@@ -95,7 +95,7 @@ public class HomeFragment extends Fragment {
         testList.add(new TestBean("Swift", 12));
         labels.setLabels(testList, new LabelView.LabelTextProvider<TestBean>() {
             @Override
-            public CharSequence getLabelText (TextView label,int position, TestBean data){
+            public CharSequence getLabelText (TextView label, int position, TestBean data){
                 return data.getName();
             }
         });

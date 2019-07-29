@@ -16,32 +16,6 @@
 
     </androidx.viewpager.widget.ViewPager>
 
-    <!--<com.flyco.tablayout.SegmentTabLayout-->
-        <!--android:id="@+id/stl_main"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="?attr/actionBarSize"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--app:tl_divider_color="@color/colorAccent"-->
-        <!--app:tl_divider_width="1dp"-->
-        <!--app:tl_indicator_color="@color/colorPrimaryDark"-->
-        <!--app:tl_indicator_height="3dp"-->
-        <!--app:tl_indicator_width_equal_title="true"-->
-        <!--app:tl_tab_space_equal="true"-->
-        <!--app:tl_textSelectColor="@color/colorPrimaryDark"-->
-        <!--app:tl_textUnselectColor="@android:color/black"-->
-        <!--app:tl_textsize="18sp"></com.flyco.tablayout.SegmentTabLayout>-->
-
-    <!--<com.flyco.tablayout.SegmentTabLayout-->
-        <!--android:id="@+id/stl_main"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="32dp"-->
-        <!--android:layout_gravity="center_horizontal"-->
-        <!--android:layout_marginTop="10dp"-->
-        <!--app:tl_bar_color="#ffffff"-->
-        <!--app:tl_indicator_color="#2C97DE"-->
-        <!--app:tl_indicator_corner_radius="8dp"-->
-        <!--app:tl_tab_padding="20dp"/>-->
-
     <com.flyco.tablayout.CommonTabLayout
         android:id="@+id/stl_main"
         android:layout_width="match_parent"
@@ -53,7 +27,6 @@
         app:tl_iconWidth="18dp"
         app:tl_indicator_bounce_enable="false"
         app:tl_indicator_color="#000000"
-        app:tl_indicator_gravity="BOTTOM"
         app:tl_textSelectColor="#000000"
         app:tl_textUnselectColor="#66000000"
         app:tl_textsize="15sp"
