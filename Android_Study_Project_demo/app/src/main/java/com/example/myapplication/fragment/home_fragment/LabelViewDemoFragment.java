@@ -55,30 +55,15 @@ public class LabelViewDemoFragment extends Fragment {
     LabelView labels;
     @BindView(R.id.home_fragment_layout)
     LinearLayout homeFragmentLayout;
-//    private LabelView labelsView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 
-        View mView = inflater.inflate(R.layout.home_fragment_layout, null);
+        View mView = inflater.inflate(R.layout.home_label_fragment_layout, null);
         ButterKnife.bind(this, mView);
-        //测试的数据
-//        ArrayList<String> label = new ArrayList<>();
-//        label.add("Android");
-//        label.add("IOS");
-//        label.add("前端");
-//        label.add("后台");
-//        label.add("微信开发");
-//        label.add("游戏开发");
-//        label.add("Java");
-//        label.add("JavaScript");
-//        label.add("C++");
-//        label.add("PHP");
-//        label.add("Python");
-//        label.add("Swift");
-//        labelsView.setLabels(label);
+
 
         ArrayList<TestBean> testList = new ArrayList<>();
         testList.add(new TestBean("Android", 1));
