@@ -37,7 +37,7 @@ public class HomeFragment extends Fragment {
     @BindView(R.id.home_fragment_layout)
     LinearLayout homeFragmentLayout;
 
-    private String[] mTitles = {"LabelView","CustomView", "MoreView"};
+    private String[] mTitles = {"LabelView","CustomView", "MoreView","...."};
     private ArrayList<Fragment> mFragments = new ArrayList<>();
 
     @Nullable
@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment {
         mFragments.add(new LabelViewDemoFragment());
         mFragments.add(SimpleCardFragment.getInstance("Switch ViewPager " + mTitles[1]));
         mFragments.add(SimpleCardFragment.getInstance("Switch ViewPager " + mTitles[2]));
-
+        mFragments.add(SimpleCardFragment.getInstance("Switch ViewPager " + mTitles[3]));
 
         initViewPager();
         return mView;

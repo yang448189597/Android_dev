@@ -4,9 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="setting Fragment"/>
+
+    <com.example.myapplication.view.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/head_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/githubprofile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        />
 </LinearLayout>

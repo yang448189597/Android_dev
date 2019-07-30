@@ -78,6 +78,10 @@ public class LabelViewDemoFragment extends Fragment {
         testList.add(new TestBean("PHP", 10));
         testList.add(new TestBean("Python", 11));
         testList.add(new TestBean("Swift", 12));
+        testList.add(new TestBean("Dart", 13));
+        testList.add(new TestBean("Flutter", 14));
+        testList.add(new TestBean("Vue", 15));
+        testList.add(new TestBean("React Native", 16));
         labels.setLabels(testList, new LabelView.LabelTextProvider<TestBean>() {
             @Override
             public CharSequence getLabelText (TextView label, int position, TestBean data){
