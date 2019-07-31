@@ -3,4 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="color_black_333333">#333333</color>
+    <color name="color_gray_7fd9d9d9">#7fd9d9d9</color>
+    <color name="im_list_select_hover">#dbdbdb</color>
+    <color name="color_login_background">#FFFFFF</color>
+
 </resources>
