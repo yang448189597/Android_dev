@@ -18,7 +18,7 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> mFragments;
     private String[] mTitles;
 
-    public MyPagerAdapter(FragmentManager fm,ArrayList<Fragment> mFragments,String[] mTitles) {
+    public MyPagerAdapter(FragmentManager fm, ArrayList<Fragment> mFragments, String[] mTitles) {
         super(fm);
         this.mFragments = mFragments;
         this.mTitles = mTitles;
@@ -31,11 +31,11 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        return mTitles[position];
+        return this.mTitles[position];
     }
 
     @Override
     public Fragment getItem(int position) {
-        return mFragments.get(position);
+        return this.mFragments.get(position);
     }
 }

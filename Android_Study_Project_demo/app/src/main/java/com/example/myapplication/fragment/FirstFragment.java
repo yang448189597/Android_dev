@@ -34,11 +34,20 @@ public class FirstFragment extends Fragment {
 
 
     private ArrayList<Fragment> mFragments = new ArrayList<>();
-    private final String[] mTitles = {
+    private String[] mTitles = {
             "热门", "iOS", "Android"
             , "前端", "后端", "设计", "工具资源"
     };
     private MyPagerAdapter mAdapter;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        for (String title : mTitles) {
+            mFragments.add(SimpleCardFragment.getInstance(title));
+        }
+
+    }
 
     @Nullable
     @Override
@@ -46,11 +55,8 @@ public class FirstFragment extends Fragment {
         View mView = inflater.inflate(R.layout.fist_fragment_layout, null);
         ButterKnife.bind(this, mView);
 
-        for (String title : mTitles) {
-            mFragments.add(SimpleCardFragment.getInstance(title));
-        }
-
         mAdapter = new MyPagerAdapter(getChildFragmentManager(), mFragments, mTitles);
+
         vp.setAdapter(mAdapter);
 
         tl1.setViewPager(vp);
