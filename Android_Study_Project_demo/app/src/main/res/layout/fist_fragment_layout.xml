@@ -17,10 +17,10 @@
             android:id="@+id/tl_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FF7F00"
+            android:background="@color/color_blue_0888ff"
             android:paddingTop="15dp"
             android:paddingBottom="15dp"
-            app:tl_indicator_gravity="TOP"
+            app:tl_indicator_gravity="BOTTOM"
             app:tl_underline_color="#1A000000"
             app:tl_underline_gravity="TOP"
             app:tl_underline_height="1dp" />

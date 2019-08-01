@@ -35,8 +35,8 @@ public class FirstFragment extends Fragment {
 
     private ArrayList<Fragment> mFragments = new ArrayList<>();
     private String[] mTitles = {
-            "热门", "iOS", "Android"
-            , "前端", "后端", "设计", "工具资源"
+            "热门", "iOS性能优化", "Android设计与开发"
+            , "前端页面设计", "后端架构设计", "设计", "工具资源"
     };
     private MyPagerAdapter mAdapter;
 

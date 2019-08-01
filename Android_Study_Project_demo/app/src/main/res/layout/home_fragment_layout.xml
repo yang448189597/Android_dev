@@ -18,7 +18,7 @@
         android:paddingRight="10dp"
         app:tl_indicator_anim_enable="true"
         app:tl_indicator_bounce_enable="false"
-        app:tl_indicator_color="#009688"
+        app:tl_indicator_color="@color/color_blue_0888ff"
         app:tl_tab_padding="20dp"/>
 
     <androidx.viewpager.widget.ViewPager
