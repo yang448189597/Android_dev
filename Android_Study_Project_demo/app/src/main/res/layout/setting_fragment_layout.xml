@@ -113,6 +113,39 @@
         android:layout_marginRight="14dp" />
 
     <RelativeLayout
+        android:id="@+id/gitHub"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/nim_semitransparency_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Github"
+            android:textColor="@color/color_black_333333"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/github" />
+    </RelativeLayout>
+
+    <View
+        style="@style/horizontal_light_thin_divider"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp" />
+
+    <RelativeLayout
         android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="66dp"

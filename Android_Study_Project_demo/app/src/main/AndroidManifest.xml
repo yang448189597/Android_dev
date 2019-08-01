@@ -3,6 +3,7 @@
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -37,6 +38,10 @@
         </activity>
 
         <activity android:name=".activity.RxPermissionDemoActivity">
+
+        </activity>
+
+        <activity android:name=".activity.GithubWebActivity">
 
         </activity>
     </application>
