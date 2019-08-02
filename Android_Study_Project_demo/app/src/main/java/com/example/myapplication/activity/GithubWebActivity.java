@@ -10,9 +10,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import com.example.myapplication.R;
+import com.example.myapplication.common.BaseActivity;
+import com.example.myapplication.common.ToolBarOptions;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -32,20 +35,33 @@ import butterknife.ButterKnife;
 *       4."ERR_UNKNOWN_URL_SCHEME" 遇到 这种问题就是网页的协议，需要添加匹配的网络协议
 *       5.在app打开页面的时候，使用Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 * */
-public class GithubWebActivity extends AppCompatActivity {
+public class GithubWebActivity extends BaseActivity {
 
     @BindView(R.id.web_view)
     WebView webView;
     String githubUrl = "https://github.com/yang448189597";
 //    String githubUrl = "https://www.baidu.com";
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.github_activity_layout);
-        ButterKnife.bind(this);
 
+    @Override
+    protected void initView() {
         initWebView();
+        ToolBarOptions options = new ToolBarOptions();
+        options.titleId = R.string.github_webView;
+        setToolBar(R.id.toolbar, options);
+        toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.nim_actionbar_black_back_icon);
+        toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.color_login_background));
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    public int getContentViewResId() {
+        return R.layout.github_activity_layout;
     }
 
     private void initWebView() {
