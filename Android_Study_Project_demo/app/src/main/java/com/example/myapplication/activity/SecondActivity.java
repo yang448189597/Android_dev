@@ -27,18 +27,15 @@ public class SecondActivity extends AppCompatActivity {
 
         final EditText messageET = findViewById(R.id.message_et);
 
-        findViewById(R.id.send).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String message = messageET.getText().toString();
-                if(TextUtils.isEmpty(message)){
-                    message = "message default";
-                }
-
-                // post 消息
-                EventBus.getDefault().post(new MessageEvent(message));
-
+        findViewById(R.id.send).setOnClickListener(view -> {
+            String message = messageET.getText().toString();
+            if(TextUtils.isEmpty(message)){
+                message = "message default";
             }
+
+            // post 消息
+            EventBus.getDefault().post(new MessageEvent(message));
+
         });
     }
 }
