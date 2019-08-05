@@ -1,7 +1,16 @@
 package com.example.myapplication.activity;
 
+import android.os.Bundle;
+import android.view.Window;
+
 import com.example.myapplication.R;
 import com.example.myapplication.common.BaseActivity;
+import com.google.android.material.tabs.TabLayout;
+
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /*
  * @Author: Luke
@@ -10,9 +19,33 @@ import com.example.myapplication.common.BaseActivity;
  * @Project: Android_Study_Project_demo
  */
 public class TabLayoutDemoActivity extends BaseActivity {
+    private MyFragmentPagerAdapter myFragmentPagerAdapter;
+
+    private TabLayout.Tab one;
+    private TabLayout.Tab two;
+    private TabLayout.Tab three;
+
+    @BindView(R.id.mToolBar)
+    Toolbar mToolBar;
+    @BindView(R.id.tab_main)
+    TabLayout tabMain;
+    @BindView(R.id.vp_main)
+    ViewPager vpMain;
 
     @Override
     protected void initView() {
+//        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+        setSupportActionBar(mToolBar);
+
+        myFragmentPagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
+        vpMain.setAdapter(myFragmentPagerAdapter);
+
+        tabMain.setupWithViewPager(vpMain);
+
+        one = tabMain.getTabAt(0);
+        two = tabMain.getTabAt(1);
+        three = tabMain.getTabAt(2);
+
 
     }
 
@@ -25,4 +58,6 @@ public class TabLayoutDemoActivity extends BaseActivity {
     public int getContentViewResId() {
         return R.layout.tab_layout_demo;
     }
+
+
 }

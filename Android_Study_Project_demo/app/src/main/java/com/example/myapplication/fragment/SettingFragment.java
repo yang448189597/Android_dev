@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import com.example.myapplication.R;
 import com.example.myapplication.activity.DemoButtonActivity;
 import com.example.myapplication.activity.GithubWebActivity;
+import com.example.myapplication.activity.TabLayoutDemoActivity;
 import com.example.myapplication.view.CircleImageView;
 
 import androidx.annotation.NonNull;
@@ -56,6 +57,7 @@ public class SettingFragment extends Fragment {
             case R.id.head_view:
                 break;
             case R.id.setting:
+                startActivity(new Intent(getContext(), TabLayoutDemoActivity.class));
                 break;
             case R.id.about:
                 break;
