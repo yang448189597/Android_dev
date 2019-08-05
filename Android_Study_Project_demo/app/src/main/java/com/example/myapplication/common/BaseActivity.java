@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.Window;
 
 import com.example.myapplication.R;
 
@@ -27,6 +28,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+                supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(getContentViewResId());
         mBinder = ButterKnife.bind(this);
         initStatus();

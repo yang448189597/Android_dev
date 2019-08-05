@@ -13,9 +13,9 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:collapsedTitleGravity="center"
+            app:collapsedTitleGravity="start"
             app:title="汗水从不说谎"
-            app:contentScrim="@color/colorPrimary"
+            app:contentScrim="@color/color_blue_0888ff"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             >
 

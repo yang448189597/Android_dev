@@ -5,9 +5,11 @@ import android.view.Window;
 
 import com.example.myapplication.R;
 import com.example.myapplication.common.BaseActivity;
+import com.example.myapplication.common.ToolBarOptions;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,8 +36,15 @@ public class TabLayoutDemoActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-//        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
-        setSupportActionBar(mToolBar);
+
+//        setSupportActionBar(mToolBar);
+
+        ToolBarOptions options = new ToolBarOptions();
+        options.titleId = R.string.empty;
+        setToolBar(R.id.mToolBar, options);
+        toolbar.setNavigationIcon(R.drawable.nim_actionbar_black_back_icon);
+        toolbar.getBackground().setAlpha(0);
+//        toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.color_login_background));
 
         myFragmentPagerAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
         vpMain.setAdapter(myFragmentPagerAdapter);

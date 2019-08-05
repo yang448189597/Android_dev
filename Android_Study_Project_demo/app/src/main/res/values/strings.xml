@@ -2,6 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="demo_button">Demo Button</string>
     <string name="github_webView">Github</string>
+    <string name="empty"></string>
 
     <item name="tag_key_data" type="id"/>
     <item name="tag_key_position" type="id"/>
