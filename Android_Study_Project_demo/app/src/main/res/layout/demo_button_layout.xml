@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
 
@@ -11,6 +12,71 @@
         android:layout_height="45dp">
 
     </androidx.appcompat.widget.Toolbar>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="NSpinner"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:spinnerMode="dropdown"
+        android:overlapAnchor="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="NiceSpinner"/>
+
+    <RelativeLayout
+
+        android:background="@color/color_blue_0888ff"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <TextView
+            android:text="玩家评价"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner_1"
+
+                android:layout_gravity="clip_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/nice_spinner_2"
+                android:layout_gravity="clip_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/btn_1"

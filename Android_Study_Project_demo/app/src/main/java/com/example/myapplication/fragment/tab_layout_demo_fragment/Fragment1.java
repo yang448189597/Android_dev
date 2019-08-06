@@ -31,7 +31,7 @@ public class Fragment1 extends Fragment {
         View view = inflater.inflate(R.layout.fragment1, container, false);
 
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recycle);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), RecyclerView.VERTICAL, false));
         initdata();
         mRecyclerView.setAdapter(new MyAdapter(mDatas));
         return view;

@@ -66,18 +66,8 @@ public class RxPermissionDemoActivity extends AppCompatActivity {
                                         Toast.LENGTH_SHORT).show();
                             }
                         },
-                        new Consumer<Throwable>() {
-                            @Override
-                            public void accept(Throwable t) {
-                                Log.e(TAG, "onError", t);
-                            }
-                        },
-                        new Action() {
-                            @Override
-                            public void run() {
-                                Log.i(TAG, "OnComplete");
-                            }
-                        });
+                        t -> Log.e(TAG, "onError", t),
+                        () -> Log.i(TAG, "OnComplete"));
     }
 
     @Override
