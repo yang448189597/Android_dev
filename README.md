@@ -7,6 +7,7 @@
 
 
 ## 代码中集成的第三方的库
+[**CircleImageView**](https://github.com/hdodenhof/CircleImageView)
 [**BaseRecyclerViewAdapterHelper**](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
 ..
 
