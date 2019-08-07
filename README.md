@@ -13,6 +13,7 @@
 
 ## 集成的第三方的库
 [**XPopup**](https://github.com/yang448189597/XPopup)
+[**nice-spinner**](https://github.com/arcadefire/nice-spinner)
 ..
 
 感谢以上作者
