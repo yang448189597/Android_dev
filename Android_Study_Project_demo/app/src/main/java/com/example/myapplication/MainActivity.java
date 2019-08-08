@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 
+import com.example.myapplication.fragment.DemosFragment;
 import com.example.myapplication.fragment.FirstFragment;
 import com.example.myapplication.fragment.HomeFragment;
 import com.example.myapplication.fragment.SettingFragment;
@@ -30,15 +31,15 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Fragment> mFragments;
     private ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
 
-    private String[] mTitles_2 = {"首页", "内容", "设置"};
+    private String[] mTitles_2 = {"首页", "内容", "实例","设置"};
 
     private int[] mIconUnselectIds = {
-            R.mipmap.home_icon, R.mipmap.bluetooth_icon,
+            R.mipmap.home_icon, R.mipmap.bluetooth_icon,R.mipmap.demo_icon,
             R.mipmap.face};
 
     private int[] mIconSelectIds = {
             R.mipmap.home_icon, R.mipmap.bluetooth_icon,
-            R.mipmap.face};
+            R.mipmap.demo_icon, R.mipmap.face};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         mFragments = new ArrayList<>();
         mFragments.add(new FirstFragment());
         mFragments.add(new HomeFragment());
+        mFragments.add(new DemosFragment());
         mFragments.add(new SettingFragment());
 
         vpMain.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
