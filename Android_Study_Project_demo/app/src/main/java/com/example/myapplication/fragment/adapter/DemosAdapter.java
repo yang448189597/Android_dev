@@ -1,4 +1,4 @@
-package com.example.myapplication.fragment;
+package com.example.myapplication.fragment.adapter;
 
 import com.example.myapplication.R;
 import com.example.myapplication.model.DemosItem;

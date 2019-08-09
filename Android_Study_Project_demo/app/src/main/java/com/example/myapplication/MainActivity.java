@@ -2,10 +2,10 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 
-import com.example.myapplication.fragment.DemosFragment;
-import com.example.myapplication.fragment.FirstFragment;
-import com.example.myapplication.fragment.HomeFragment;
-import com.example.myapplication.fragment.SettingFragment;
+import com.example.myapplication.fragment.app_fragment.DemosFragment;
+import com.example.myapplication.fragment.app_fragment.FirstFragment;
+import com.example.myapplication.fragment.app_fragment.HomeFragment;
+import com.example.myapplication.fragment.app_fragment.SettingFragment;
 import com.example.myapplication.view.TabEntity;
 import com.flyco.tablayout.CommonTabLayout;
 import com.flyco.tablayout.listener.CustomTabEntity;
