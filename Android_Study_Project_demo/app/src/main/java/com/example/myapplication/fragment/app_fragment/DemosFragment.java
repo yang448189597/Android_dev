@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import com.example.myapplication.R;
 import com.example.myapplication.activity.DemoButtonActivity;
 import com.example.myapplication.activity.EventBusActivity;
+import com.example.myapplication.activity.PictureSelectorActivity;
 import com.example.myapplication.activity.TabLayoutDemoActivity;
 import com.example.myapplication.activity.TestActivity;
 import com.example.myapplication.fragment.adapter.DemosAdapter;
@@ -33,13 +34,10 @@ import butterknife.ButterKnife;
  */
 public class DemosFragment extends Fragment {
 
-    private static final Class<?>[] ACTIVITY = {DemoButtonActivity.class, EventBusActivity.class, TestActivity.class, TabLayoutDemoActivity.class,
-            DemoButtonActivity.class, EventBusActivity.class, TestActivity.class, TabLayoutDemoActivity.class,
-            DemoButtonActivity.class, EventBusActivity.class, TestActivity.class, TabLayoutDemoActivity.class};
-    private static final String[] TITLE = {"Demo1", "Demo2", "Demo3", "Demo4","Demo1", "Demo2", "Demo3", "Demo4","Demo1", "Demo2", "Demo3", "Demo4"};
-    private static final int[] IMG = {R.mipmap.demo_1,R.mipmap.demo_2,R.mipmap.demo_3,R.mipmap.demo_4,
-            R.mipmap.demo_1,R.mipmap.demo_2,R.mipmap.demo_3,R.mipmap.demo_4,
-            R.mipmap.demo_1,R.mipmap.demo_2,R.mipmap.demo_3,R.mipmap.demo_4};
+    private static final Class<?>[] ACTIVITY = {DemoButtonActivity.class, EventBusActivity.class, TestActivity.class,
+            TabLayoutDemoActivity.class, PictureSelectorActivity.class,};
+    private static final String[] TITLE = {"Demo1", "Demo2", "Demo3", "Demo4","Demo5"};
+    private static final int[] IMG = {R.mipmap.demo_1,R.mipmap.demo_2,R.mipmap.demo_3,R.mipmap.demo_4,R.mipmap.demo_5};
     private ArrayList<DemosItem> mDataList;
 
     @BindView(R.id.demos_recyclerView)
