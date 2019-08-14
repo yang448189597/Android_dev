@@ -99,9 +99,8 @@
 
         </activity>
 
-
         <activity
-            android:name=".activity.PictureSelectorActivity"
+            android:name=".activity.LottieDemoActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
