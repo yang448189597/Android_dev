@@ -43,7 +43,7 @@
 
 - [**lottie-android**](https://github.com/airbnb/lottie-android)
 
-  支持json制作的动画库，可以实现复杂的动画效果，节省开发动画的时间
+  支持json制作的动画库，可以实现复杂的动画效果，节省开发动画的时间，可以在官网找到[**复杂动画**](https://lottiefiles.com/?lang=zh_CN)，使用一些UI的设计软件可以直接生成 ”data.json“的动画文件
 
 - [**FlycoTabLayout**](https://github.com/H07000223/FlycoTabLayout)
 
