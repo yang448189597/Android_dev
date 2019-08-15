@@ -16,14 +16,6 @@
 
   万能的RecycleView适配器，支持多种item，优化了RecylerView加载过程，包含多种动画效果，支持上拉刷新、添加Header等常用的应用场景
 
-- [**PictureSelector**](https://github.com/LuckSiege/PictureSelector)
-
-  支持图片，视频，音频，照相的图片选择器
-
-- [**lottie-android**](https://github.com/airbnb/lottie-android)
-
-  支持json制作的动画库，可以实现复杂的动画效果，节省开发动画的时间
-
 - ..
 
 
