@@ -9,15 +9,47 @@
 ## 代码中集成的第三方的库
 
 - [**CircleImageView**](https://github.com/hdodenhof/CircleImageView)
+
+  圆形的图片的自定义控件
+
 - [**BaseRecyclerViewAdapterHelper**](https://github.com/CymChad/BaseRecyclerViewAdapterHelper)
-..
+
+  万能的RecycleView适配器，支持多种item，优化了RecylerView加载过程，包含多种动画效果，支持上拉刷新、添加Header等常用的应用场景
+
+- [**PictureSelector**](https://github.com/LuckSiege/PictureSelector)
+
+  支持图片，视频，音频，照相的图片选择器
+
+- [**lottie-android**](https://github.com/airbnb/lottie-android)
+
+  支持json制作的动画库，可以实现复杂的动画效果，节省开发动画的时间
+
+- ..
 
 
 ## 集成的第三方的库
 
 - [**XPopup**](https://github.com/yang448189597/XPopup)
+
+  通用弹窗，可以更换各种ui，支持多种弹窗的应用场景
+
 - [**nice-spinner**](https://github.com/arcadefire/nice-spinner)
-..
+
+  下拉菜单，可以自定义样式
+
+- [**PictureSelector**](https://github.com/LuckSiege/PictureSelector)
+
+  支持图片，视频，音频，照相的图片选择器
+
+- [**lottie-android**](https://github.com/airbnb/lottie-android)
+
+  支持json制作的动画库，可以实现复杂的动画效果，节省开发动画的时间
+
+- [**FlycoTabLayout**](https://github.com/H07000223/FlycoTabLayout)
+
+  Android TabLayout 导航控件库
+
+- ..
 
 感谢以上作者
 
