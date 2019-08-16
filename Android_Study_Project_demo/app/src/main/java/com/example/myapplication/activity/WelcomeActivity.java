@@ -24,6 +24,8 @@ import androidx.appcompat.app.AppCompatActivity;
  */
 public class WelcomeActivity extends AppCompatActivity {
 
+    private static boolean firstEnter = true; // 是否首次进入
+
     /**倒计时文本*/
     private TextView mCountdownTextView;
 
@@ -48,8 +50,22 @@ public class WelcomeActivity extends AppCompatActivity {
         //初始化控件
         initView();
 
-        //初始化Handler和Runnable
-        initThread();
+        if(!firstEnter){
+            onIntent();
+        }else{
+            //初始化Handler和Runnable
+            initThread();
+        }
+
+    }
+
+    private void onIntent() {
+        Intent intent = getIntent();
+        if (!firstEnter && intent == null) {
+            finish();}
+        else{
+            openNextActivity(WelcomeActivity.this);
+        }
     }
 
 
@@ -150,8 +166,12 @@ public class WelcomeActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        //开启线程
-        countdownHandle.post(runnable);
+
+        if(firstEnter){
+            firstEnter = false;
+            //开启线程
+            countdownHandle.post(runnable);
+        }
         super.onResume();
 
     }
