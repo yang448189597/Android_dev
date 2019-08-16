@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
-import android.os.Bundle;
-
+import com.example.myapplication.common.BaseActivity;
 import com.example.myapplication.fragment.app_fragment.DemosFragment;
 import com.example.myapplication.fragment.app_fragment.FirstFragment;
 import com.example.myapplication.fragment.app_fragment.HomeFragment;
@@ -13,15 +12,13 @@ import com.flyco.tablayout.listener.OnTabSelectListener;
 
 import java.util.ArrayList;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @BindView(R.id.vp_main)
     ViewPager vpMain;
@@ -42,10 +39,7 @@ public class MainActivity extends AppCompatActivity {
             R.mipmap.demo_icon, R.mipmap.face};
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+    protected void initView() {
 
         for (int i = 0; i < mTitles_2.length; i++) {
             mTabEntities.add(new TabEntity(mTitles_2[i], mIconSelectIds[i], mIconUnselectIds[i]));
@@ -92,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
 
         stlMain.setCurrentTab(0);
 
+    }
+
+    @Override
+    protected void initData() {
+
+    }
+
+    @Override
+    public int getContentViewResId() {
+        return R.layout.activity_main;
     }
 
 

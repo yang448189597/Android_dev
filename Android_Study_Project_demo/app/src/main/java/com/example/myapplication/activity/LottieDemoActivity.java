@@ -21,10 +21,7 @@ public class LottieDemoActivity extends BaseActivity {
 
     @Override
     protected void initView() {
-//        lottieView.setImageAssetsFolder("images");
-////        lottieView.setAnimation("data.json");
-//        lottieView.loop(true);
-//        lottieView.playAnimation();
+
 
     }
 
