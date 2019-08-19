@@ -51,4 +51,5 @@ dependencies {
     implementation 'com.github.arcadefire:nice-spinner:1.4.3'
     implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
     implementation 'com.airbnb.android:lottie:3.0.7'
+    implementation 'com.github.xiaohaibin:XBanner:androidx_v1.0.1'
 }

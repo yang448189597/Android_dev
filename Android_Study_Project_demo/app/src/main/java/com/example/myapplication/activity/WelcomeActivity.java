@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 
@@ -28,6 +30,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     /**倒计时文本*/
     private TextView mCountdownTextView;
+    private LottieAnimationView welcomeLottieView;
 
     private static final int MSG_COUNT_WHAT = 99;
     private static final int NUM = 6;
@@ -73,7 +76,10 @@ public class WelcomeActivity extends AppCompatActivity {
      * 初始化控件
      * */
     private void initView(){
-        mCountdownTextView = (TextView) findViewById(R.id.id_countdownTextView);
+        mCountdownTextView = findViewById(R.id.id_countdownTextView);
+        welcomeLottieView = findViewById(R.id.welcome_lottie_view);
+        long duration = welcomeLottieView.getDuration();
+        Log.d("duration",duration+ "");
         mCountdownTextView.setOnClickListener(view -> {
             stopThread();
             openNextActivity(WelcomeActivity.this);//打开下一个界面
@@ -182,6 +188,8 @@ public class WelcomeActivity extends AppCompatActivity {
         initCountdownNum();//初始化倒计时的秒数，这样按home键后再次进去欢迎界面，则会重新倒计时
 
         stopThread();
+
+        welcomeLottieView.cancelAnimation();
 
         super.onStop();
     }

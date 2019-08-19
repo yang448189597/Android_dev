@@ -9,11 +9,11 @@
 
 
     <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie_view"
+        android:id="@+id/welcome_lottie_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:lottie_fileName="7647-welcome-animation-for-humanmanager-newsletter.json"
-        app:lottie_loop="true"
+        app:lottie_loop="false"
         app:lottie_autoPlay="true"
         />
 
