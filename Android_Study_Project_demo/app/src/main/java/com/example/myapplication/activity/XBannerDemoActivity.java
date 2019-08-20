@@ -51,23 +51,8 @@ public class XBannerDemoActivity extends AppCompatActivity {
         setContentView(R.layout.xbanner_layout_activity);
         ButterKnife.bind(this);
         initData();
-//        initView();
     }
 
-//    protected void initView() {
-//
-//
-//
-//        if (imageBeanList.size() > 0) {
-//
-//            xbanner.loadImage((banner, model, view, position) -> {
-//                Glide.with(XBannerDemoActivity.this).load(imageBeanList.get(1).getImgUrl()).into((ImageView) view);
-//
-//            });
-//            xbanner.setBannerData(imageBeanList);
-//        }
-//
-//    }
 
     protected void initData() {
 //        https://www.apiopen.top/meituApi?page=1

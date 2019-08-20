@@ -41,7 +41,11 @@
 
   Android TabLayout 导航控件库
 
-- ..
+- [**XBanner**](https://github.com/xiaohaibin/XBanner)
+
+  无限轮播图控件
+
+- 
 
 感谢以上作者
 
