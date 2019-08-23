@@ -15,6 +15,7 @@ import com.example.myapplication.activity.PictureSelectorActivity;
 import com.example.myapplication.activity.TabLayoutDemoActivity;
 import com.example.myapplication.activity.TestActivity;
 import com.example.myapplication.activity.XBannerDemoActivity;
+import com.example.myapplication.activity.XPopupDemoActivity;
 import com.example.myapplication.fragment.adapter.DemosAdapter;
 import com.example.myapplication.model.DemosItem;
 import com.example.myapplication.view.RecyclerView.adapter.BaseQuickAdapter;
@@ -39,10 +40,10 @@ public class DemosFragment extends Fragment {
 
     private static final Class<?>[] ACTIVITY = {DemoButtonActivity.class, EventBusActivity.class, TestActivity.class,
             TabLayoutDemoActivity.class, PictureSelectorActivity.class, GithubWebActivity.class, LottieDemoActivity.class,
-            XBannerDemoActivity.class};
-    private static final String[] TITLE = {"Spinner", "EventBus", "ButtonUI", "ScrollTabLayout","PictureSelector","GitHubWebView","LottieView","XBanner"};
+            XBannerDemoActivity.class, XPopupDemoActivity.class};
+    private static final String[] TITLE = {"Spinner", "EventBus", "ButtonUI", "ScrollTabLayout","PictureSelector","GitHubWebView","LottieView","XBanner","XPopup"};
     private static final int[] IMG = {R.mipmap.demo_1,R.mipmap.demo_2,R.mipmap.demo_3,
-            R.mipmap.demo_4,R.mipmap.demo_5,R.mipmap.demo_6,R.mipmap.demo_7,R.mipmap.demo_8};
+            R.mipmap.demo_4,R.mipmap.demo_5,R.mipmap.demo_6,R.mipmap.demo_7,R.mipmap.demo_8,R.mipmap.demo_9};
     private ArrayList<DemosItem> mDataList;
 
     @BindView(R.id.demos_recyclerView)

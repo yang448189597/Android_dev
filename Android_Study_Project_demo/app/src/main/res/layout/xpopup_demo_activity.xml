@@ -4,6 +4,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <Button
+        android:id="@+id/xPopup_btn_1"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="xPop_Loading"
+        ></Button>
+
+    <Button
+        android:id="@+id/xPopup_btn_2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:text="xPop_center"
+        ></Button>
 
 
 </LinearLayout>
