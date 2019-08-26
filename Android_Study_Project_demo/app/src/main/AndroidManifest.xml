@@ -137,6 +137,15 @@
             android:windowSoftInputMode="adjustUnspecified|adjustResize">
 
         </activity>
+
+        <activity
+            android:name=".activity.FlutterDemoActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize">
+
+        </activity>
     </application>
 
 

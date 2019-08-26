@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import com.example.myapplication.R;
 import com.example.myapplication.activity.DemoButtonActivity;
 import com.example.myapplication.activity.EventBusActivity;
+import com.example.myapplication.activity.FlutterDemoActivity;
 import com.example.myapplication.activity.GithubWebActivity;
 import com.example.myapplication.activity.LottieDemoActivity;
 import com.example.myapplication.activity.PictureSelectorActivity;
@@ -40,10 +41,10 @@ public class DemosFragment extends Fragment {
 
     private static final Class<?>[] ACTIVITY = {DemoButtonActivity.class, EventBusActivity.class, TestActivity.class,
             TabLayoutDemoActivity.class, PictureSelectorActivity.class, GithubWebActivity.class, LottieDemoActivity.class,
-            XBannerDemoActivity.class, XPopupDemoActivity.class};
-    private static final String[] TITLE = {"Spinner", "EventBus", "ButtonUI", "ScrollTabLayout","PictureSelector","GitHubWebView","LottieView","XBanner","XPopup"};
+            XBannerDemoActivity.class, XPopupDemoActivity.class, FlutterDemoActivity.class};
+    private static final String[] TITLE = {"Spinner", "EventBus", "ButtonUI", "ScrollTabLayout","PictureSelector","GitHubWebView","LottieView","XBanner","XPopup","Flutter"};
     private static final int[] IMG = {R.mipmap.demo_1,R.mipmap.demo_2,R.mipmap.demo_3,
-            R.mipmap.demo_4,R.mipmap.demo_5,R.mipmap.demo_6,R.mipmap.demo_7,R.mipmap.demo_8,R.mipmap.demo_9};
+            R.mipmap.demo_4,R.mipmap.demo_5,R.mipmap.demo_6,R.mipmap.demo_7,R.mipmap.demo_8,R.mipmap.demo_9,R.mipmap.demo_10};
     private ArrayList<DemosItem> mDataList;
 
     @BindView(R.id.demos_recyclerView)
