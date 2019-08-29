@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
         // changing the primarySwatch below to Colors.green and then invoke
         // "hot reload" (press "r" in the console where you ran "flutter run",
         // or press Run > Flutter Hot Reload in a Flutter IDE). Notice that the
-        // counter didn't reset back to zero; the application is not restarted.
+        // counter didn't reset backls
+        //to zero; the application is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Dly Demo Home Page'),
