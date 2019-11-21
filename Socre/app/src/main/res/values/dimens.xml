@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="team_text_size">20sp</dimen>
+    <dimen name="socre_text_size">80sp</dimen>
+    <dimen name="button_text_size">30sp</dimen>
+    <dimen name="button_Height_Land">40sp</dimen>
+</resources>
