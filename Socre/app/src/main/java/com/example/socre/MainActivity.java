@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // 当操作返回键的时候，APP的当前界面不应该被销毁，应该是返回主界面，网易云 qq 都是类似的操作习惯 从而数据也可以在其中处理保存，不会丢失
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if(keyCode == KeyEvent.KEYCODE_BACK){
