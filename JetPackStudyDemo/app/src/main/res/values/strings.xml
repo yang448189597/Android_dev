@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JetPackStudyDemo</string>
+    <string name="title_activity_demo1">Demo1Activity</string>
+    <string name="textview1">count</string>
+    <string name="button_plus"> + </string>
+    <string name="button_minus"> - </string>
+    <string name="demo_1_key">demo 1 key</string>
+    <string name="demo_1_shp_name">demo_1_shp_name</string>
+</resources>
