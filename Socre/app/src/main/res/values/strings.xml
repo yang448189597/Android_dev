@@ -9,4 +9,6 @@
     <string name="button3">+3</string>
     <string name="undoButton">undo</string>
     <string name="resetButton">reset</string>
+    <string name="DLY_DATA">dly_data</string>
+    <string name="DLY_KEY">dly_key</string>
 </resources>
