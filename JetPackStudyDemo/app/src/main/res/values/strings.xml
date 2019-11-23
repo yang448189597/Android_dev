@@ -13,4 +13,5 @@
     <string name="home_fragment_button">Home_Button</string>
     <string name="detail_fragment_tv">Detail</string>
     <string name="detail_fragment_button">Detail_button</string>
+    <string name="agrument_tv">agrument_Text</string>
 </resources>

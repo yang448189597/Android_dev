@@ -10,6 +10,7 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.jetpackstudydemo.R;
 
@@ -35,5 +36,9 @@ public class DetailFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         getView().findViewById(R.id.button4).setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_detailFragment_to_homeFragment));
+        String nameString = getArguments().getString("name");
+        String nameString2 = getArguments().getString("my_name");
+        TextView textView = getView().findViewById(R.id.textView4);
+        textView.setText(nameString2);
     }
 }
