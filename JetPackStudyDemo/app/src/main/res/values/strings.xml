@@ -6,4 +6,11 @@
     <string name="button_minus"> - </string>
     <string name="demo_1_key">demo 1 key</string>
     <string name="demo_1_shp_name">demo_1_shp_name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment_tv">Home</string>
+    <string name="home_fragment_button">Home_Button</string>
+    <string name="detail_fragment_tv">Detail</string>
+    <string name="detail_fragment_button">Detail_button</string>
 </resources>
